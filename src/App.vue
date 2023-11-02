@@ -1,17 +1,12 @@
 <script setup>
 import FooterElement from './Components/FooterElement.vue';
+import HeaderElement from './Components/HeaderElement.vue';
+
 </script>
 
 <template>
-  <header>
-    <div class="logo">LOGO</div>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Content</li>
-      <li>Contacts</li>
-    </ul>
-  </header>
+  <HeaderElement/>
+  
   <main>
     <h1>Заголовок</h1>
     <div>
@@ -24,26 +19,6 @@ import FooterElement from './Components/FooterElement.vue';
 </template>
 
 <style scoped>
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 100px;
-  flex: 0 0 auto;
-  background-color: bisque;
-}
-
-ul {
-  flex: 1;
-  display: flex;
-  list-style-type: none;
-  font-size: 20px;
-  font-weight: 600;
-}
-ul > li {
-  padding-right: 20px;
-}
-
 main {
   flex: 1 0 auto;
   background-color: silver
