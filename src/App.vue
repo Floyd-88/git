@@ -54,6 +54,11 @@ main {
   flex: 1 0 auto;
   background-color: silver
 }
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
 
 footer {
   display: flex;
