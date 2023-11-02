@@ -2,10 +2,10 @@
       <header>
     <div class="logo"><a href="#">LOGO</a></div>
     <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Content</li>
-      <li>Contacts</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Content</a></li>
+      <li><a href="#">Contacts</a></li>
     </ul>
   </header>
 </template>
@@ -30,5 +30,9 @@ ul {
 }
 ul > li {
   padding-right: 20px;
+}
+ul > li> a {
+    color: black;
+  text-decoration: none;
 }
 </style>

@@ -1,6 +1,6 @@
 <script setup>
-import FooterElement from './Components/FooterElement.vue';
-import HeaderElement from './Components/HeaderElement.vue';
+import FooterElement from '@/Components/FooterElement.vue';
+import HeaderElement from '@/Components/HeaderElement.vue';
 
 </script>
 
