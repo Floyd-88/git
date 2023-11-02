@@ -33,7 +33,10 @@ header {
 .logo {
   flex: 1;
   text-align: center;
+}
 
+.logo>a {
+  color:wheat
 }
 ul {
   flex: 1;
@@ -57,9 +60,9 @@ footer {
   height: 100px;
   flex: 0 0 auto;
   align-items: center;
-
+  color: wheat;
   /* margin-top: auto; */
-  background-color: lawngreen;
+  background-color: black;
 }
 
 .copy{
