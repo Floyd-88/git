@@ -11,3 +11,11 @@
   flex-direction: column;
   height: 100vh;
 }
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+.logo>a{
+  color:wheat;
+}
