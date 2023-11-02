@@ -58,7 +58,7 @@ footer {
   align-items: center;
 
   /* margin-top: auto; */
-  background-color: slategray;
+  background-color: lawngreen;
 }
 
 .copy{
