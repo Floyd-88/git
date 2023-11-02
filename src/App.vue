@@ -1,18 +1,23 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-    <header>
-      <div class="logo">LOGO</div>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Content</li>
-        <li>Contacts</li>
-      </ul>
-    </header>
-    <main></main>
-    <footer></footer>
+  <header>
+    <div class="logo">LOGO</div>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Content</li>
+      <li>Contacts</li>
+    </ul>
+  </header>
+  <main></main>
+  <footer>
+    <div class="logo">LOGO</div>
+    <div class="copy">
+      <div>Copyright Dio</div>
+      <div>Designed By The Provided</div>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
@@ -29,15 +34,14 @@ header {
   flex: 1;
   text-align: center;
 }
-ul{
+ul {
   flex: 1;
   display: flex;
   list-style-type: none;
   font-size: 20px;
   font-weight: 600;
-  
 }
-ul>li {
+ul > li {
   padding-right: 20px;
 }
 
@@ -47,11 +51,20 @@ main {
 }
 
 footer {
+  display: flex;
+  flex-direction: row;
   height: 100px;
   flex: 0 0 auto;
+  align-items: center;
 
   /* margin-top: auto; */
   background-color: slategray;
 }
 
+.copy{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center
+}
 </style>
