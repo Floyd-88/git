@@ -12,7 +12,7 @@
   </header>
   <main></main>
   <footer>
-    <div class="logo">LOGO</div>
+    <div class="logo"><a href="#">LOGO</a></div>
     <div class="copy">
       <div>Copyright Dio</div>
       <div>Designed By The Provided</div>
@@ -33,6 +33,7 @@ header {
 .logo {
   flex: 1;
   text-align: center;
+
 }
 ul {
   flex: 1;
