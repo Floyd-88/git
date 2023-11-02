@@ -29,10 +29,19 @@ ul {
   font-weight: 600;
 }
 ul > li {
-  padding-right: 20px;
+  margin-right: 20px;
+  color: black;
+}
+
+li:hover {
+    border-bottom: 3px solid black;
 }
 ul > li> a {
     color: black;
   text-decoration: none;
+}
+
+a:hover {
+    color:rgb(73, 72, 72)
 }
 </style>
