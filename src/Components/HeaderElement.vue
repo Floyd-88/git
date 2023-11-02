@@ -33,15 +33,12 @@ ul > li {
   color: black;
 }
 
-li:hover {
-    border-bottom: 3px solid black;
-}
 ul > li> a {
     color: black;
   text-decoration: none;
 }
 
 a:hover {
-    color:rgb(73, 72, 72)
+    color:rgb(78, 44, 179)
 }
 </style>
