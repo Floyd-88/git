@@ -1,7 +1,7 @@
 <template>
   <main>
     <h1>Заголовок</h1>
-    <div class="wrapper_main">
+    <div class="main_wrapper">
       <div class="content">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum et cum debitis ab
         dignissimos, pariatur distinctio nesciunt eaque doloribus ullam inventore. Provident
@@ -31,7 +31,7 @@ h1 {
   justify-content: center;
   margin: 20px;
 }
-.wrapper_main {
+.main_wrapper {
     display: flex;
     flex-direction: row;
     height: 80%;
