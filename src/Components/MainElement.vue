@@ -3,7 +3,7 @@
     <h1>Заголовок</h1>
     <div class="main_wrapper">
       <div class="content">
-        Lorem, ipsum dolor fgdkjgkl fgfkdj fgdajgioa fghioahgio
+        Lorem,
       </div>
       <aside>
         <div>какое-то содержание в правой части содержимого страницы</div>
