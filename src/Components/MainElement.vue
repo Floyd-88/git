@@ -5,7 +5,7 @@
       <div class="content">
         Lorem, ipsum dolor
       </div>
-      <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, temporibus?</div>
+      <div>Lorem</div>
       <aside>
         <div>какое-то содержание в правой части содержимого страницы</div>
         <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui magni iusto dolorem, ex maiores laboriosam maxime quidem minus sint fugit incidunt doloribus quam voluptatem eius vero dignissimos impedit nisi libero!</div>
