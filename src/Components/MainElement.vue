@@ -5,6 +5,7 @@
       <div class="content">
         Lorem, ipsum dolor
       </div>
+      <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, temporibus?</div>
       <aside>
         <div>какое-то содержание в правой части содержимого страницы</div>
       </aside>
