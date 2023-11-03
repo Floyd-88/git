@@ -7,6 +7,8 @@
         <li><a href="#">Ссылка 4</a></li>
         <li><a href="#">Ссылка 5</a></li>
         <li><a href="#">Ссылка 6</a></li>
+        <li><a href="#">Ссылка 7</a></li>
+
 
     </ul>
   </aside>
