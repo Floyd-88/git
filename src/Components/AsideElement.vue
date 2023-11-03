@@ -25,4 +25,13 @@ li {
     padding: 5px 10px;
     list-style-type: none;
 }
+
+a{
+  font-size: 17px;
+  color:rgb(18, 17, 17);
+  text-decoration: none;
+}
+a:hover {
+    color: whitesmoke;
+}
 </style>
