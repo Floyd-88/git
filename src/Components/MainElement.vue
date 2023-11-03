@@ -3,17 +3,19 @@
     <h1>Заголовок</h1>
     <div class="main_wrapper">
       <div class="content">
-        Lorem, ipsum dolor
+        <div>gdfbfd fgsdgfd</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, temporibus?</div>
       </div>
-      <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, temporibus?</div>
-      <aside>
-        <div>какое-то содержание в правой части содержимого страницы</div>
-        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui magni iusto dolorem, ex maiores laboriosam maxime quidem minus sint fugit incidunt doloribus quam voluptatem eius vero dignissimos impedit nisi libero!</div>
-      </aside>
+      <AsideElement/>
+     
     </div>
   </main>
 </template>
+<script setup>
+import AsideElement from '@/Components/AsideElement.vue';
 
+
+</script>
 <style scoped>
 main {
   flex: 1 0 auto;
@@ -43,11 +45,5 @@ h1 {
     line-height: 1.5rem;
 }
 
-aside {
-    flex: 1;
-    padding: 5px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    background-color:gray;
-}
+
 </style>
