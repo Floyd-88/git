@@ -1,43 +1,13 @@
-<script>
-const documents = [
-  {
-    content: 'Ты был мне как брат! Я любил тебя!',
-    author: 'Obi-Wan Kenobi',
-    date: '2017-01-17 07:13:07'
-  },
-  {
-    content: 'База повстанцев находится на Дантуине.',
-    author: 'Leia Organa',
-    date: '2019-11-27 21:33:56'
-  },
-  {
-    content:
-      'Страх открывает доступ к темной стороне! Страх рождает гнев, гнев рождает ненависть, ненависть — залог страданий.',
-    author: 'Leia Organa',
-    date: '1999-02-19 16:56:11'
-  }
-]
-
-function getDocuments(documents) {
-  let res = documents.reduce(
-    (acc, item) => {
-      acc.content += item.content
-      acc.author.add(item.author)
-      if (new Date(item.date).getTime() > new Date(acc.date).getTime()) {
-        acc.date = item.date
-      }
-      return acc
-    },
-    {
-      content: '',
-      author: new Set(),
-      date: null
+<script setup>
+import { defineProps, defineEmits } from 'vue'
+defineProps({
+    searchWord: {
+        type: String,
+        require: ""
     }
-  )
-  res.author = Array.from(res.author)
-  return res
-}
-console.log(getDocuments(documents))
+})
+defineEmits(['update:searchWord', 'goSearch'])
+
 </script>
 
 <template>
@@ -54,7 +24,12 @@ console.log(getDocuments(documents))
 
     <div>
         <label for="search">Поиск на стрнице:</label> <br>
-        <input id="search" name="search" type="text">
+        <input id="search" 
+        name="search" 
+        type="text" 
+        :value="searchWord" 
+        @input="$emit('update:searchWord', $event.target.value)">
+        <button @click="$emit('goSearch')">Поиск</button>
     </div>
   </aside>
 </template>

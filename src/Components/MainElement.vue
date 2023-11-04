@@ -3,37 +3,42 @@
     <h1>Заголовок</h1>
     <div class="main_wrapper">
       <div class="content">
-        <div>gdfbfd fgsdgfd</div>
-        <div ref="articleRef">
+        <div ref="article">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, temporibus?
         </div>
+        <div ref="articleSearch">
+        </div>
       </div>
-      <AsideElement />
+      <AsideElement v-model:searchWord="searchWord" @goSearch="goSearch"/>
     </div>
   </main>
 </template>
 <script setup>
 import AsideElement from '@/Components/AsideElement.vue'
-import { watchEffect, ref } from 'vue'
+import {ref, watch } from 'vue'
 
-let search = ref('dd')
-let articleRef = ref(null)
-let article = ref('')
+let searchWord = ref('')
+let article = ref(null)
+let articleSearch = ref(null)
 
-watchEffect(
-  () => {
-    article.value = articleRef.value.innerHTML
-  },
-  {
-    flush: 'post'
-  }
-)
+function goSearch() {
+      let reggie = new RegExp(searchWord.value, "ig");
+      let found = article.value.innerHTML.search(reggie) !== -1;
 
-function getSearch(search) {
-  console.log(search)
-  return search
+    if(!found) {
+      return article.value.innerHTML
+    } else {
+      article.value.style = 'display: none'
+      return articleSearch.value.innerHTML = article.value.innerHTML.replace(reggie, '<b>' + searchWord.value + '</b>');
+
+    } 
 }
-getSearch(search)
+
+watch(searchWord, () => {
+  articleSearch.value.innerHTML = ''
+  article.value.style = 'display: block'
+}) 
+
 </script>
 <style scoped>
 main {
