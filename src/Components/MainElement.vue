@@ -37,7 +37,9 @@ function goSearch() {
 }
 
 watch(searchWord, () => {
-  keywords.value = []
+  if(!searchWord.value) {
+    keywords.value = []
+  }
 })
 
 </script>
