@@ -4,7 +4,13 @@
     <div class="main_wrapper">
       <div class="content">
         <div ref="article" v-for="(text, index) in arrayText" :key="index">
-          {{ text }}
+          <Highlighter
+            class="my-highlight"
+            highlightClassName="highlight"
+            :searchWords="keywords"
+            :autoEscape="true"
+            :textToHighlight="text"
+          />
         </div>
       </div>
       <AsideElement v-model:searchWord="searchWord" @goSearch="goSearch" />
@@ -13,17 +19,26 @@
 </template>
 <script setup>
 import AsideElement from '@/Components/AsideElement.vue'
-import { ref, defineProps } from 'vue'
+import { ref, defineProps, watch } from 'vue'
+import Highlighter from 'vue-highlight-words'
 
-// eslint-disable-next-line no-unused-vars
-let props = defineProps({
+
+defineProps({
   arrayText: {
     type: Array
   }
 })
 
 let searchWord = ref('')
+let keywords = ref([])
 
+function goSearch() {
+  keywords.value = searchWord.value.split(' ')
+}
+
+watch(searchWord, () => {
+  keywords.value = []
+})
 
 </script>
 <style scoped>
